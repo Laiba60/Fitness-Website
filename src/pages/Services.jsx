@@ -1,10 +1,12 @@
 import React from 'react'
-import Servicesintro from '../components/Servicesintro'
+
+import Header from '../components/Header'
 
 const Services = () => {
   return (
     <div>
-        <Servicesintro/>
+      <Header/> 
+        
     </div>
   )
 }

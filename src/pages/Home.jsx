@@ -5,6 +5,7 @@ import AboutUS from '../components/AboutUS'
 import GetLatestUpdateQRM from "../components/GetLatestUpdateQRM";
 import Footer from "../components/Footer";
 import GymMission from "../components/GymMission";
+import Servicesintro from '../components/Servicesintro'
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <HeroSection />
       <AboutUS/>
       <GymMission/>
-
+      <Servicesintro/>
       <GetLatestUpdateQRM />
       <Footer />
     </div>
