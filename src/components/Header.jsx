@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CiStopwatch } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,6 +16,22 @@ const Header = () => {
 
   const navLinks = ["Home", "About", "Services", "Contact"];
 
+  // Function to generate proper route path
+  const getLinkPath = (item) => {
+    switch (item) {
+      case "Home":
+        return "/";
+      case "About":
+        return "/about";
+      case "Services":
+        return "/services";
+      case "Contact":
+        return "/contact";
+      default:
+        return "/";
+    }
+  };
+
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 backdrop-blur-sm
@@ -23,25 +40,25 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
         {/* Logo */}
-        <a
-          href="#home"
+        <Link
+          to="/"
           className={`text-2xl font-bold transition-colors duration-300 ${
             scrolled ? "text-black" : "text-white"
           }`}
         >
           QRM
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex ml-auto space-x-8 font-semibold">
           {navLinks.map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              to={getLinkPath(item)}
               className="hover:text-red-500 transition-colors duration-300"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -60,14 +77,14 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden bg-white text-black px-6 py-6 space-y-4 transition-all duration-300 ease-in-out">
           {navLinks.map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              to={getLinkPath(item)}
               className="block font-semibold hover:text-red-500"
               onClick={() => setMenuOpen(false)}
             >
               {item}
-            </a>
+            </Link>
           ))}
 
           <div className="pt-4 border-t">
