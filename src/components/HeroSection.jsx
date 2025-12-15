@@ -1,15 +1,15 @@
 import React from "react";
-import Gypbg from "../assets/images/Gypbg.jpg";
+import girlbg from "../assets/images/girlbg.webp";
 
 const HeroSection = () => {
   return (
     <section
       id="home"
       className="relative min-h-screen bg-cover bg-center flex items-center"
-      style={{ backgroundImage: `url(${Gypbg})` }}
+      style={{ backgroundImage: `url(${girlbg})` }}
     >
       
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative z-10 max-w-4xl px-6 md:px-12 pt-32 md:pt-40 text-center md:text-left">
         <span className="text-red-500 font-semibold uppercase">

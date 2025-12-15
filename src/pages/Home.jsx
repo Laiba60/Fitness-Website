@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import AboutUS from '../components/AboutUS'
 import GetLatestUpdateQRM from "../components/GetLatestUpdateQRM";
 import Footer from "../components/Footer";
+import GymMission from "../components/GymMission";
 
 const Home = () => {
   return (
@@ -11,6 +12,8 @@ const Home = () => {
       <Header />
       <HeroSection />
       <AboutUS/>
+      <GymMission/>
+
       <GetLatestUpdateQRM />
       <Footer />
     </div>
