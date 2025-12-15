@@ -1,60 +1,87 @@
-import React from 'react'
+import React from "react";
+import {
+  RiFacebookFill,
+  RiInstagramLine,
+} from "react-icons/ri";
 
 const Footer = () => {
   return (
-   <footer className="footer" id="footer">
-            <div className="parallax-overlay"></div>
-            <div className="container">
-                <div className="main-footer">
-                    <div className="row">
-                        <div className="col-12 col-md-12 col-lg-3">
-                            <div className="footer_first_row">
-                                <img src="assets/images/logo/footer-logo.png" alt="Footer Logo Image" className="img-fluid"/>
-                                <div className="footer-social-list">
-                                    <a href="https://www.facebook.com/" className="facebook-ic"><i className="ri-facebook-fill icons"></i></a>
-                                    <a href="https://twitter.com/" className="twitter-ic"><i class="ri-twitter-fill icons"></i></a>
-                                    <a href="https://www.instagram.com/" className="instagram-ic"><i className="ri-instagram-line icons"></i></a>
-                                    <a href="https://www.youtube.com/" className="youtube-ic"><i class="ri-youtube-fill icons"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg-3">
-                            <div className="footer_second_row locate_places text-center">
-                                <div className="place_detail">
-                                    <i className="ri-map-pin-line"></i>
-                                </div>
-                                <p>121 Manila St. Brookly, CA</p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg-3">
-                            <div className="footer_third_row locate_places text-center">
-                                <div className="place_detail">
-                                    <i className="ri-smartphone-line"></i>
-                                </div>
-                                <p><a href="tel:+012345678899">+01 234 567 8899</a></p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg-3">
-                            <div className="footer_forth_row locate_places text-center">
-                                <div className="place_detail">
-                                    <i className="ri-mail-unread-line"></i>
-                                </div>
-                                <p><a href="mailto:contact@fitzaro.com">contact@fitzaro.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="sub-footer">
-                    <div className="footer-copyright">
-                        <p className="m-0">© 2022 FITZARO. All Rights Reserved.</p>
-                    </div>
-                    <div className="copyright_privacy">
-                        <a href="javascript:void(0);">Privacy Policy</a><span>|</span><a href="javascript:void(0);">Terms &amp; Condition</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-  )
-}
+    <footer className="bg-black text-white relative">
+      {/* Container */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
 
-export default Footer
+        {/* Column 1: About & Image */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <img
+            src="https://qrgym.online/wp-content/uploads/2025/11/0f2b9d21-7bea-41dc-b896-3d28afae81aa-e1763027190366.jpeg"
+            alt="QR Gym"
+            className="w-full sm:w-80 mb-4 rounded-lg object-cover"
+          />
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Welcome to <span className="font-semibold">QR Gym</span>, your ultimate destination for fitness, strength, and transformation. Located in <span className="font-semibold">Al Refaa, Doha – Qatar</span>, QR Gym inspires and empowers individuals of all fitness levels.
+          </p>
+        </div>
+
+        {/* Column 2: Contact & Address */}
+        <div className="text-center sm:text-left">
+          <h4 className="text-lg font-semibold mb-2">Contact</h4>
+          <p className="text-gray-300 text-sm mb-4">
+            Mail: contact@qrgym.com <br />
+            Phone: 66474187
+          </p>
+
+          <h4 className="text-lg font-semibold mb-2">Address</h4>
+          <p className="text-gray-300 text-sm">
+            First floor, directly opposite the National Museum – Al Riffa area, Doha, Qatar
+          </p>
+        </div>
+
+        {/* Column 3: Quick Links */}
+        <div className="text-center sm:text-left">
+          <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+          <ul className="text-gray-300 text-sm space-y-1">
+            <li><a href="#" className="hover:text-red-500 transition">Home</a></li>
+            <li><a href="#" className="hover:text-red-500 transition">About Us</a></li>
+            <li><a href="#" className="hover:text-red-500 transition">Our Services</a></li>
+            <li><a href="#" className="hover:text-red-500 transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        {/* Column 4: Working Hours & Socials */}
+        <div className="text-center sm:text-left">
+          <h4 className="text-lg font-semibold mb-2">Working Hours</h4>
+          <p className="text-gray-300 text-sm mb-4">
+            Everyday: 6 am to 2 am
+          </p>
+
+          <h4 className="text-lg font-semibold mb-2">Our Socials</h4>
+          <div className="flex justify-center sm:justify-start gap-3">
+            <a href="https://www.facebook.com/profile.php?id=61583350382077" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-600 transition p-2 rounded-full bg-white/5">
+              <RiFacebookFill size={20} />
+            </a>
+            <a href="https://www.instagram.com/qr_gym" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500 transition p-2 rounded-full bg-white/5">
+              <RiInstagramLine size={20} />
+            </a>
+            <a href="https://www.tiktok.com/@qrgym0" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-black transition p-2 rounded-full bg-white/5">
+              TikTok
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-white/20 mt-12 pt-6">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+          <p className="text-gray-400 text-sm text-center md:text-left">
+            © {new Date().getFullYear()} <span className="text-white font-semibold">QR Gym</span>. All Rights Reserved.
+          </p>
+          <a href="https://mediasolutionsqa.com/" className="mx-auto md:mx-0">
+            <img src="/wp-content/uploads/2023/03/white-logo.png" alt="Media Solutions" className="h-8" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
