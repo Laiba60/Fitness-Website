@@ -6,10 +6,8 @@ const Serviceintro = () => {
     <section className="relative bg-gray-100 overflow-hidden py-20">
       <div className="max-w-7xl mx-auto flex items-center relative">
         
-        {/* LEFT SIDE (TEXT BOX) */}
         <div className="relative z-10 bg-white shadow-xl rounded-lg px-10 py-16 w-full lg:w-1/2">
           
-          {/* Diagonal Shape */}
           <svg
             className="hidden lg:block absolute top-0 right-0 h-full w-24 text-white translate-x-1/2"
             fill="currentColor"
@@ -44,7 +42,7 @@ const Serviceintro = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE (IMAGE OUTSIDE BOX) */}
+        
         <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[45%]">
           <div className="overflow-hidden rounded-xl shadow-2xl">
             <img

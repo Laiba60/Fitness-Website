@@ -6,7 +6,6 @@ import GetLatestUpdateQRM from "../components/GetLatestUpdateQRM";
 import Footer from "../components/Footer";
 import GymMission from "../components/GymMission";
 import Servicesintro from '../components/Servicesintro'
-
 const Home = () => {
   return (
     <div>
@@ -20,5 +19,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;
