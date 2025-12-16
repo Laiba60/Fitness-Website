@@ -1,12 +1,12 @@
 import React from "react";
-import girlbg from "../assets/images/girlbg.webp";
+import Boysbg from "../assets/images/Boysbg.avif";
 
 const HeroSection = () => {
   return (
     <section
       id="home"
       className="relative min-h-screen bg-cover bg-center flex items-center"
-      style={{ backgroundImage: `url(${girlbg})` }}
+      style={{ backgroundImage: `url(${Boysbg})` }}
     >
       
       <div className="absolute inset-0 bg-black/40"></div>

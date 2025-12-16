@@ -16,7 +16,6 @@ const Header = () => {
 
   const navLinks = ["Home", "About", "Services", "Contact"];
 
-  
   const getLinkPath = (item) => {
     switch (item) {
       case "Home":
@@ -35,11 +34,14 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 backdrop-blur-sm
-        ${scrolled ? "bg-white shadow-md text-black" : "bg-transparent text-white"}
+        ${
+          scrolled
+            ? "bg-white text-black shadow-md"
+            : "bg-gradient-to-b from-[#4b0000] to-black text-white"
+        }
       `}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
-        
         <Link
           to="/"
           className={`text-2xl font-bold transition-colors duration-300 ${
@@ -49,7 +51,6 @@ const Header = () => {
           QRM
         </Link>
 
-        
         <nav className="hidden md:flex ml-auto space-x-8 font-semibold">
           {navLinks.map((item) => (
             <Link
@@ -62,7 +63,6 @@ const Header = () => {
           ))}
         </nav>
 
-        
         <button
           className="md:hidden ml-auto p-2 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -73,7 +73,6 @@ const Header = () => {
         </button>
       </div>
 
-  
       {menuOpen && (
         <div className="md:hidden bg-white text-black px-6 py-6 space-y-4 transition-all duration-300 ease-in-out">
           {navLinks.map((item) => (

@@ -41,7 +41,7 @@ const OurProfessionalTrainer = () => {
           {trainers.map((trainer, index) => (
             <div
               key={index}
-              className="relative bg-gradient-to-b from-[#4b0000] to-black rounded-3xl px-6 pt-16 pb-8 text-white shadow-lg"
+              className="relative bg-linear-to-b from-[#4b0000] to-black rounded-3xl px-6 pt-16 pb-8 text-white shadow-lg"
             >
               
               <div className="absolute -top-14 left-1/2 -translate-x-1/2">
