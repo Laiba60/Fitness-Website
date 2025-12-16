@@ -9,6 +9,7 @@ import Servicesintro from '../components/Servicesintro'
 import ServiceDetail from "../components/ServiceDetail";
 import Contact from "../components/Contact";
 import OurProfessionalTrainer from "../components/OurProfessionalTrainer";
+import PersonalTrainerBooking from "../components/PersonalTrainerBooking";
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
       <GymMission/>
       <Servicesintro/>
       <ServiceDetail/>
+      <PersonalTrainerBooking />
       <OurProfessionalTrainer/>
       <GetLatestUpdateQRM />
       <Footer />
