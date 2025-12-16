@@ -2,7 +2,7 @@ import React from "react";
 import service3 from "../assets/images/service3.avif";
 import yogaimg from "../assets/images/yogaimg.webp";
 import nutritionimg from "../assets/images/nutritionimg.avif";
-
+import groupimage from "../assets/images/groupimage.avif";
 const ServiceDetail = () => {
   const services = [
     {
@@ -31,16 +31,14 @@ const ServiceDetail = () => {
       description: "Get personalized meal plans to fuel your workouts and recovery."
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1584467735876-33822a1f4dbd?auto=format&fit=crop&w=800&q=80",
+      imageSrc: groupimage,
       title: "Group Classes",
       description: "Stay motivated and engaged with high-energy group sessions."
     }
   ];
-
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4">
- 
         <div className="text-center mb-12">
           <span className="text-red-600 font-semibold uppercase">Our Services</span>
           <h2 className="mt-3 text-4xl font-extrabold text-gray-900">Transform Your Body & Mind</h2>
@@ -51,15 +49,12 @@ const ServiceDetail = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div key={index} className="relative h-80 overflow-hidden rounded-xl group shadow-lg">
-             
               <img
                 src={service.imageSrc}
                 alt={service.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
-          
               <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                 <p className="text-sm">{service.description}</p>

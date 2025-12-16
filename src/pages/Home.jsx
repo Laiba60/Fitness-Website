@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import GymMission from "../components/GymMission";
 import Servicesintro from '../components/Servicesintro'
 import ServiceDetail from "../components/ServiceDetail";
+import Contact from "../components/Contact";
+import OurProfessionalTrainer from "../components/OurProfessionalTrainer";
 const Home = () => {
   return (
     <div>
@@ -16,8 +18,12 @@ const Home = () => {
       <GymMission/>
       <Servicesintro/>
       <ServiceDetail/>
+      <OurProfessionalTrainer/>
       <GetLatestUpdateQRM />
       <Footer />
+      <Contact/>
+
+
     </div>
   );
 };
