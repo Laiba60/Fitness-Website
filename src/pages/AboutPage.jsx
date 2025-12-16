@@ -1,6 +1,5 @@
 import React from 'react'
 import AboutDetail from '../components/AboutDetail'
-
 const AboutPage = () => {
   return (
     <div>
@@ -8,5 +7,4 @@ const AboutPage = () => {
     </div>
   )
 }
-
 export default AboutPage
