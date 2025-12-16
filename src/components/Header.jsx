@@ -37,7 +37,7 @@ const Header = () => {
         ${
           scrolled
             ? "bg-white text-black shadow-md"
-            : "bg-gradient-to-b from-[#4b0000] to-black text-white"
+            : "bg-linear-to-b from-[#4b0000] to-black text-white"
         }
       `}
     >

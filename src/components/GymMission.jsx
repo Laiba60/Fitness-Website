@@ -3,7 +3,7 @@ import mission from '../assets/images/mission.webp';
 
 const GymMission = () => {
   return (
-    <section className="bg-gradient-to-b from-[#4b0000] to-black text-white py-16 px-4 md:px-8">
+    <section className="bg-linear-to-b from-[#4b0000] to-black text-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         

@@ -3,14 +3,14 @@ import React from "react";
 const GetLatestUpdateQRM = () => {
   return (
     <section className="py-12 bg-gray-100">
-      <div className="max-w-5xl mx-auto bg-gradient-to-b from-[#4b0000] to-black shadow-2xl rounded-3xl overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-linear-to-b from-[#4b0000] to-black shadow-2xl rounded-3xl overflow-hidden">
         <div className="md:flex items-stretch">
 
           {/* Left Content */}
           <div className="p-10 md:w-2/3 text-white">
             <div className="flex items-start gap-4 mb-6">
               <svg
-                className="h-10 w-10 flex-shrink-0 text-white"
+                className="h-10 w-10 shrink-0 text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
