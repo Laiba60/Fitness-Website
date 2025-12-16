@@ -40,7 +40,7 @@ const ServiceDetail = () => {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Section Heading */}
+ 
         <div className="text-center mb-12">
           <span className="text-red-600 font-semibold uppercase">Our Services</span>
           <h2 className="mt-3 text-4xl font-extrabold text-gray-900">Transform Your Body & Mind</h2>
@@ -48,20 +48,18 @@ const ServiceDetail = () => {
             Professional fitness services designed to help you stay strong, healthy, and confident.
           </p>
         </div>
-
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div key={index} className="relative h-80 overflow-hidden rounded-xl group shadow-lg">
-              {/* Image */}
+             
               <img
                 src={service.imageSrc}
                 alt={service.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              {/* Overlay */}
+              
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
-              {/* Text */}
+          
               <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                 <p className="text-sm">{service.description}</p>
