@@ -33,7 +33,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          {/* Text Section */}
+        
           <div className="order-1 md:order-2">
             <span className="text-red-600 font-semibold uppercase tracking-wider mb-4 block">
               ABOUT US
