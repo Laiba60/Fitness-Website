@@ -1,14 +1,20 @@
 import React from 'react';
 import Boyimg from '../assets/images/Boyimg.jpg';
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+   const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about-detail"); 
+  };
   return (
     <section className="bg-white py-12 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
        
         <div className="grid md:grid-cols-2 gap-10 items-center">
           
-          {/* Image Section */}
+         
           <div className="order-2 md:order-1 relative">
             <div className="absolute inset-0 flex flex-col justify-center items-start text-gray-200 opacity-70">
               {['NO PAIN NO GAIN', 'NO PAIN NO GAIN', 'NO PAIN NO GAIN', 'NO PAIN NO GAIN', 'NO PAIN NO GAIN'].map((text, index) => (
@@ -56,8 +62,8 @@ const AboutUs = () => {
               ))}
             </ul>
 
-            {/* Learn More Button */}
-            <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300">
+            
+            <button onClick={handleClick} className="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300">
               Learn More
             </button>
           </div>
