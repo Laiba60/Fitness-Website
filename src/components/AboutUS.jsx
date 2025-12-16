@@ -36,12 +36,11 @@ const AboutUs = () => {
               Giving Good Health To Good People
             </h1>
 
-            {/* Updated paragraph */}
             <p className="text-gray-600 mb-8 leading-relaxed">
               Welcome to <span className="font-semibold">QR Gym</span>, your ultimate destination for fitness, strength, and transformation. Located in the heart of <span className="font-semibold">Al Refaa, Doha – Qatar</span>, QR Gym is designed to inspire and empower individuals of all fitness levels. Our state-of-the-art facilities, expert trainers, and motivating environment make every workout an opportunity to become stronger — both physically and mentally. At QR Gym, we believe that fitness is not just about building your body, it’s about building your confidence, your energy, and your lifestyle.
             </p>
             
-            <ul className="space-y-4">
+            <ul className="space-y-4 mb-8">
               {[
                 'Duis quis odio quis dui sagittis laoreet.',
                 'Suspendisse tempus felis a libero mollis ultrices.',
@@ -56,6 +55,11 @@ const AboutUs = () => {
                 </li>
               ))}
             </ul>
+
+            {/* Learn More Button */}
+            <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300">
+              Learn More
+            </button>
           </div>
         </div>
       </div>
