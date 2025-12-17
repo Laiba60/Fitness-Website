@@ -1,12 +1,21 @@
 import React from "react";
 
 const GetLatestUpdateQRM = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.elements.email.value;
+    if (!email) {
+      alert("Please enter your email!");
+      return;
+    }
+    console.log("Subscribed:", email);
+    e.target.reset();
+  };
+
   return (
     <section className="py-12 bg-gray-100">
-      <div className="max-w-5xl mx-auto bg-linear-to-b from-[#4b0000] to-black shadow-2xl rounded-3xl overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-linear-to-b from-red-900 to-black shadow-2xl rounded-3xl overflow-hidden">
         <div className="md:flex items-stretch">
-
-          {/* Left Content */}
           <div className="p-10 md:w-2/3 text-white">
             <div className="flex items-start gap-4 mb-6">
               <svg
@@ -15,6 +24,7 @@ const GetLatestUpdateQRM = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -34,32 +44,21 @@ const GetLatestUpdateQRM = () => {
               </div>
             </div>
 
-            {/* Form */}
-            <form className="flex flex-col sm:flex-row mt-6">
-            <input
-  type="email"
-  placeholder="Enter your email"
-  className="
-    flex-1 py-3 px-4
-    rounded-xl sm:rounded-r-none
-    bg-transparent
-    border border-white
-    text-white placeholder-gray-300
-    shadow-md
-    focus:outline-none
-    focus:ring-2 focus:ring-red-500
-    focus:border-red-500
-    transition
-  "
-/>
-
-
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row mt-6 gap-2">
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+                className="flex-1 py-3 px-4 rounded-xl sm:rounded-r-none bg-transparent border border-white text-white placeholder-gray-300 shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
+              />
               <button
                 type="submit"
-                className="mt-3 sm:mt-0 sm:ml-0 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl sm:rounded-l-none transition shadow-md flex items-center justify-center"
+                className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl sm:rounded-l-none transition-transform transform hover:scale-105 shadow-md flex items-center justify-center"
+                aria-label="Subscribe"
               >
                 <svg
-                  className="h-6 w-6"
+                  className="h-6 w-6 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -72,11 +71,11 @@ const GetLatestUpdateQRM = () => {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
+                Send
               </button>
             </form>
           </div>
 
-         
           <div className="hidden md:block md:w-1/3">
             <img
               src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80"
