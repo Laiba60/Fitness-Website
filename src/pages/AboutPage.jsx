@@ -1,13 +1,17 @@
 import React from 'react'
-import AboutDetail from '../components/AboutDetail'
+
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import AboutDetail from '../components/AboutDetail'
+import AboutBanner from '../components/AboutBanner'
+import AboutUs from '../components/AboutUS'
+import GetLatestUpdateQRM from '../components/GetLatestUpdateQRM'
 const AboutPage = () => {
   return (
     <div>
       <Header/>
-      <AboutDetail />
+      <AboutBanner/>
+      <AboutUs/>
+      <GetLatestUpdateQRM/>
       <Footer/>
     </div>
   )
