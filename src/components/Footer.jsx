@@ -1,31 +1,25 @@
 import React from "react";
-import {
-  RiFacebookFill,
-  RiInstagramLine,
-} from "react-icons/ri";
+import { RiFacebookFill, RiInstagramLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
     <footer className="bg-linear-to-b from-[#4b0000] to-black text-white relative">
-     
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
-
-        
+        {/* Logo & About */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
           <img
-  src="https://qrgym.online/wp-content/uploads/2025/11/0f2b9d21-7bea-41dc-b896-3d28afae81aa-e1763027190366.jpeg"
-  alt="QR Gym"
-  className="
-    w-40
-    sm:w-48
-    md:w-56
-    lg:w-64
-    mb-4
-    rounded-lg
-    object-contain
-  "
-/>
-
+            src="https://qrgym.online/wp-content/uploads/2025/11/0f2b9d21-7bea-41dc-b896-3d28afae81aa-e1763027190366.jpeg"
+            alt="QR Gym"
+            className="
+              w-40
+              sm:w-48
+              md:w-56
+              lg:w-64
+              mb-4
+              rounded-lg
+              object-contain
+            "
+          />
           <p className="text-gray-300 text-sm leading-relaxed">
             Welcome to <span className="font-semibold">QR Gym</span>, your ultimate destination for fitness, strength, and transformation. Located in <span className="font-semibold">Al Refaa, Doha – Qatar</span>, QR Gym inspires and empowers individuals of all fitness levels.
           </p>
@@ -45,7 +39,7 @@ const Footer = () => {
           </p>
         </div>
 
-      
+        {/* Quick Links */}
         <div className="text-center sm:text-left">
           <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
           <ul className="text-gray-300 text-sm space-y-1">
@@ -56,7 +50,7 @@ const Footer = () => {
           </ul>
         </div>
 
-       
+        {/* Working Hours & Socials */}
         <div className="text-center sm:text-left">
           <h4 className="text-lg font-semibold mb-2">Working Hours</h4>
           <p className="text-gray-300 text-sm mb-4">
@@ -78,14 +72,18 @@ const Footer = () => {
         </div>
       </div>
 
-      
+      {/* Bottom Footer */}
       <div className="border-t border-white/20 mt-12 pt-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
           <p className="text-gray-400 text-sm text-center md:text-left">
             © {new Date().getFullYear()} <span className="text-white font-semibold">QR Gym</span>. All Rights Reserved.
           </p>
+
+          {/* Logo with background color */}
           <a href="https://mediasolutionsqa.com/" className="mx-auto md:mx-0">
-            <img src="/wp-content/uploads/2023/03/white-logo.png" alt="Media Solutions" className="h-8" />
+            <div className="bg-red-600 p-2 rounded">
+              <img src="/wp-content/uploads/2023/03/white-logo.png" alt="Media Solutions" className="h-8" />
+            </div>
           </a>
         </div>
       </div>
