@@ -7,9 +7,9 @@ import Footer from "../components/Footer";
 import GymMission from "../components/GymMission";
 import Servicesintro from '../components/Servicesintro'
 import ServiceDetail from "../components/ServiceDetail";
-
 import OurProfessionalTrainer from "../components/OurProfessionalTrainer";
 import PersonalTrainerBooking from "../components/PersonalTrainerBooking";
+import OverallFeedback from "../components/OverallFeedback";
 const Home = () => {
   return (
     <div>
@@ -21,6 +21,7 @@ const Home = () => {
       <ServiceDetail/>
       <PersonalTrainerBooking />
       <OurProfessionalTrainer/>
+      <OverallFeedback/>
       <GetLatestUpdateQRM />
       <Footer />
      
