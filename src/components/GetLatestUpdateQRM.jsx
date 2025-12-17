@@ -1,5 +1,5 @@
 import React from "react";
-
+import blackbgboy from "../assets/images/blackbgboy.webp";
 const GetLatestUpdateQRM = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -78,7 +78,7 @@ const GetLatestUpdateQRM = () => {
 
           <div className="hidden md:block md:w-1/3">
             <img
-              src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80"
+              src={blackbgboy}
               alt="Fitness update"
               className="w-full h-full object-cover opacity-90"
             />
