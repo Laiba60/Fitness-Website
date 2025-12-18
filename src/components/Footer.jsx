@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBullseye } from "react-icons/fa";
 import { RiFacebookFill, RiInstagramLine } from "react-icons/ri";
 const Footer = () => {
   return (
@@ -67,10 +68,10 @@ const Footer = () => {
             © {new Date().getFullYear()} <span className="text-white font-semibold">QR Gym</span>. All Rights Reserved.
           </p>
           <a href="https://mediasolutionsqa.com/" className="mx-auto md:mx-0">
-            <div className="bg-red-600 p-2 rounded">
-              <img src="/wp-content/uploads/2023/03/white-logo.png" alt="Media Solutions" className="h-8" />
-            </div>
-          </a>
+  <div className="bg-red-600 p-2 rounded flex items-center justify-center">
+    <FaBullseye className="text-white h-6 w-6" />
+  </div>
+</a>
         </div>
       </div>
     </footer>
