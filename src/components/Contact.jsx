@@ -19,7 +19,7 @@ const ContactUs = () => {
      
       <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
 
-        {/* LEFT CONTENT */}
+        
         <div>
           <span className="text-red-500 uppercase tracking-widest font-semibold">
             Our Statics
