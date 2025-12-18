@@ -22,11 +22,11 @@ const HeroSection = () => {
           vivamus urna eu. Augue et rhoncus gravida in velit at a amet.
         </p>
         <Link
-  to="/contact"
-  className="inline-block mt-8 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
->
-  Book Appointment
-</Link>
+      to="/contact"
+        className="inline-block mt-8 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+        >
+       Book Appointment
+      </Link>
       </div>
       <a
         href="#about"
