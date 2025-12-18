@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FaHeadset, FaThumbsUp, FaDumbbell, FaAward } from "react-icons/fa";
 import FeedbackBg from "../assets/images/feedbackbg.avif";
-
 const stats = [
   { id: 1, icon: <FaHeadset className="text-red-600 text-4xl sm:text-5xl" />, number: 80, label: "Expert Trainer" },
   { id: 2, icon: <FaThumbsUp className="text-red-600 text-4xl sm:text-5xl" />, number: 120, label: "Client Feedback" },
   { id: 3, icon: <FaDumbbell className="text-red-600 text-4xl sm:text-5xl" />, number: 100, label: "Total Branches" },
   { id: 4, icon: <FaAward className="text-red-600 text-4xl sm:text-5xl" />, number: 70, label: "Award Winning" },
 ];
-
 const OverallFeedback = () => {
   const [counters, setCounters] = useState(stats.map(() => 0));
-
   useEffect(() => {
     const intervals = stats.map((stat, index) => {
       return setInterval(() => {
@@ -24,7 +21,6 @@ const OverallFeedback = () => {
         });
       }, 20);
     });
-
     return () => intervals.forEach(clearInterval);
   }, []);
 
@@ -33,9 +29,7 @@ const OverallFeedback = () => {
       className="relative bg-cover bg-center py-16 sm:py-20 lg:py-24"
       style={{ backgroundImage: `url(${FeedbackBg})` }}
     >
-     
       <div className="absolute inset-0 bg-black/50"></div>
-
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-12">
           Our Achievements
