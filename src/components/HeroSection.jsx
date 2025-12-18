@@ -8,7 +8,8 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${Boysbg})` }}
     > 
       <div className="absolute inset-0 bg-black/40"></div>
-      <div className="relative z-10 max-w-4xl px-6 md:px-12 pt-32 md:pt-40 text-center md:text-left">
+      <div className="relative z-10 max-w-4xl  px-6 md:px-12 pt-32 md:pt-40 text-center md:text-left">
+
         <span className="text-red-500 font-semibold uppercase">
           The Best Fitness And Gym Studio
         </span>

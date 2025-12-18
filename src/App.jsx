@@ -1,13 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop"; 
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Services from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+
 function App() {
   return (
     <Router>
+      <ScrollToTop /> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,4 +21,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;

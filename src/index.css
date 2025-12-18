@@ -1,1 +1,16 @@
 @import "tailwindcss";
+/* Animate text vertically (top to bottom) */
+@keyframes moveDown {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.no-pain-animation {
+  animation: moveDown 6s linear infinite alternate;
+  pointer-events: none;  /* Prevent accidental interaction */
+  user-select: none;     /* Make text unselectable */
+}
