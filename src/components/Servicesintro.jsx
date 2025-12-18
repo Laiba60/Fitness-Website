@@ -27,7 +27,7 @@ const Serviceintro = () => {
           </p>
           <div className="mt-8">
             <a
-              href="#"
+              href="/services"
               className="inline-flex items-center justify-center px-8 py-3 text-white bg-red-600 hover:bg-red-700 rounded-md text-base font-medium transition"
             >
               Book Service
