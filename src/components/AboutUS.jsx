@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
    const navigate = useNavigate();
       const handleClick = () => {
-    navigate("/about-detail"); 
+    navigate("/about"); 
   };
   return (
     <section className="bg-white py-12 md:py-20">
