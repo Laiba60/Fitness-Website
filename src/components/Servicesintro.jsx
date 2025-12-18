@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import serviceintro from "../assets/images/serviceintro.webp";
 const Serviceintro = () => {
   return (
@@ -26,12 +27,12 @@ const Serviceintro = () => {
             Ipsum sapien pretium sollicitudin et tortor.
           </p>
           <div className="mt-8">
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="inline-flex items-center justify-center px-8 py-3 text-white bg-red-600 hover:bg-red-700 rounded-md text-base font-medium transition"
             >
               Book Service
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[45%]">
