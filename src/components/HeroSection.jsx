@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Boysbg from "../assets/images/Boysbg.avif";
 const HeroSection = () => {
   return (
@@ -20,12 +21,12 @@ const HeroSection = () => {
           Risus ultricies feugiat iaculis est. Eget blandit fringilla in
           vivamus urna eu. Augue et rhoncus gravida in velit at a amet.
         </p>
-        <a
-          href="/contact"
-          className="inline-block mt-8 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
-        >
-          Book Appointment
-        </a>
+        <Link
+  to="/contact"
+  className="inline-block mt-8 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+>
+  Book Appointment
+</Link>
       </div>
       <a
         href="#about"
