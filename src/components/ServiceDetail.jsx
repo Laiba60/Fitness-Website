@@ -6,32 +6,32 @@ import groupimage from "../assets/images/groupimage.avif";
 const ServiceDetail = () => {
   const services = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80",
+      imageSrc: "https://qrgym.online/wp-content/uploads/2025/11/10-500x600.jpg",
       
       description: "Fully Equipped Gym – Modern strength, cardio, and functional training equipment"
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
+      imageSrc: "https://qrgym.online/wp-content/uploads/2025/11/8-1-500x600.jpg",
       
       description: "Personal Training – Customized programs with certified trainers."
     },
     {
-      imageSrc: service3,
+      imageSrc: "https://qrgym.online/wp-content/uploads/2025/11/9-500x600.jpg",
 
       description: "Group Classes – From HIIT to Zumba and Yoga, find your favorite way to move."
     },
     {
-      imageSrc: yogaimg,
+      imageSrc: "https://qrgym.online/wp-content/uploads/2025/11/12-500x600.jpg",
     
       description: "Nutrition & Fitness Consultation – Get expert guidance tailored to your goals."
     },
     {
-      imageSrc: nutritionimg,
+      imageSrc: "https://qrgym.online/wp-content/uploads/2025/11/11-500x600.jpg",
       
       description: "Men’s & Women’s Sections – Separate training areas for comfort and privacy."
     },
     {
-      imageSrc: groupimage,
+      imageSrc: "https://qrgym.online/wp-content/uploads/2025/11/4-500x600.jpg",
       
       description: "Locker Rooms & Showers – Clean, safe, and convenient facilities for every member."
     }
@@ -56,8 +56,11 @@ const ServiceDetail = () => {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition"></div>
               <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-sm">{service.description}</p>
+                
+               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white leading-relaxed">
+               {service.description}
+                </p>
+
               </div>
             </div>
           ))}

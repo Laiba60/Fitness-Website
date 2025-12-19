@@ -21,10 +21,11 @@ const GymMission = () => {
             <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
               Inspire fitness as a lifestyle.
             </h2>
-            <p className="text-gray-400 mt-3">
+            <p className="mt-3 text-gray-400  text-left leading-relaxed">
               To become Qatar’s most trusted and inspiring fitness community — where passion meets performance.
-              We envision a future where fitness becomes a lifestyle, not a task, and where QR Gym sets the standard for quality, innovation, and results.
+             We envision a future where fitness becomes a lifestyle, not a task, and where QR Gym sets the standard for quality, innovation, and results.
             </p>
+
           </div>
         </div>
         <div className="relative">
