@@ -15,7 +15,7 @@ const HeroSection = () => {
           The Best Fitness And Gym Studio
         </span>
         <h1 className="text-white text-4xl md:text-6xl font-extrabold mt-4 leading-tight">
-          Build Your Perfect Body And Healthy Growth
+          QRM GYM WHERE STRENGTH MEETS PASSION
         </h1>
         <p className="text-gray-200 max-w-xl mt-6">
           Risus ultricies feugiat iaculis est. Eget blandit fringilla in

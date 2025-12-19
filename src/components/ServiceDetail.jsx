@@ -7,33 +7,33 @@ const ServiceDetail = () => {
   const services = [
     {
       imageSrc: "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80",
-      title: "Strength Training",
-      description: "Build muscle, increase power, and improve overall strength."
+      
+      description: "Fully Equipped Gym – Modern strength, cardio, and functional training equipment"
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
-      title: "Cardio Fitness",
-      description: "Boost stamina and heart health with guided cardio sessions."
+      
+      description: "Personal Training – Customized programs with certified trainers."
     },
     {
       imageSrc: service3,
-      title: "Personal Coaching",
-      description: "One-on-one training tailored to your fitness goals."
+
+      description: "Group Classes – From HIIT to Zumba and Yoga, find your favorite way to move."
     },
     {
       imageSrc: yogaimg,
-      title: "Yoga & Flexibility",
-      description: "Enhance flexibility, balance, and inner peace with guided yoga."
+    
+      description: "Nutrition & Fitness Consultation – Get expert guidance tailored to your goals."
     },
     {
       imageSrc: nutritionimg,
-      title: "Nutrition Guidance",
-      description: "Get personalized meal plans to fuel your workouts and recovery."
+      
+      description: "Men’s & Women’s Sections – Separate training areas for comfort and privacy."
     },
     {
       imageSrc: groupimage,
-      title: "Group Classes",
-      description: "Stay motivated and engaged with high-energy group sessions."
+      
+      description: "Locker Rooms & Showers – Clean, safe, and convenient facilities for every member."
     }
   ];
   return (

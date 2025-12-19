@@ -41,11 +41,9 @@ const AboutUs = () => {
           {/* Right Side Content */}
           <div className="order-1 md:order-2">
             <span className="text-red-600 font-semibold uppercase tracking-wider mb-4 block">
-              ABOUT US
+              ABOUT QR GYM
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-              Giving Good Health To Good People
-            </h1>
+            
             <p className="text-gray-600 mb-8 leading-relaxed text-left">
               Welcome to <span className="font-semibold">QR Gym</span>, your ultimate destination for fitness, strength, and transformation. Located in the heart of <span className="font-semibold">Al Refaa, Doha – Qatar</span>, QR Gym is designed to inspire and empower individuals of all fitness levels. Our state-of-the-art facilities, expert trainers, and motivating environment make every workout an opportunity to become stronger — both physically and mentally. At QR Gym, we believe that fitness is not just about building your body, it’s about building your confidence, your energy, and your lifestyle.
             </p>
