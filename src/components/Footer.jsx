@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaBullseye } from "react-icons/fa";
 import { RiFacebookFill, RiInstagramLine } from "react-icons/ri";
 import  LogoQRM from "../assets/images/LogoQRM.jpg";
@@ -42,10 +43,10 @@ const Footer = () => {
         <div className="text-center sm:text-left">
           <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
           <ul className="text-gray-300 text-sm space-y-1">
-            <li><a href="/" className="hover:text-red-500 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-red-500 transition">About Us</a></li>
-            <li><a href="services" className="hover:text-red-500 transition">Our Services</a></li>
-            <li><a href="/contact" className="hover:text-red-500 transition">Contact Us</a></li>
+            <li><Link to="/" className="hover:text-red-500 transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-red-500 transition">About Us</Link></li>
+            <li><Link to="/services" className="hover:text-red-500 transition">Our Services</Link></li>
+            <li><Link to="/contact" className="hover:text-red-500 transition">Contact Us</Link></li>
           </ul>
         </div>
         <div className="text-center sm:text-left">
