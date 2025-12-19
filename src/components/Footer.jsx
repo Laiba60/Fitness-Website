@@ -8,20 +8,20 @@ const Footer = () => {
     <footer className="bg-linear-to-b from-[#4b0000] to-black text-white relative">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-         <img
-        src={LogoQRM}
-        alt="QR Gym Logo"
-        className="
-          w-12
-        sm:w-14
-        md:w-16
-        lg:w-20
-        h-auto
-        mb-2
-        object-contain
-        rounded-md"
-  
-          />
+          <img
+                 src={LogoQRM}
+                alt="QR Gym Logo"
+               className="
+               w-6
+               sm:w-10
+               md:w-12
+               lg:w-14
+               h-auto
+               mb-2
+               object-contain
+             rounded-md
+           "
+         />
 
 
 

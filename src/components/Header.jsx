@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CiStopwatch } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import LogoQRM from "../assets/images/LogoQRM.jpg";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,14 +38,22 @@ const Header = () => {
       `}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
-        <Link
-          to="/"
-          className={`text-2xl font-bold transition-colors duration-300 ${
-            scrolled ? "text-black" : "text-white"
-          }`}
-        >
-          QRM
-        </Link>
+        <img
+        src={LogoQRM}
+       alt="QR Gym Logo"
+      className="
+      w-6
+      sm:w-10
+      md:w-12
+      lg:w-14
+      h-auto
+      mb-2
+      object-contain
+    rounded-md
+  "
+/>
+
+        
         <nav className="hidden md:flex ml-auto space-x-8 font-semibold">
           {navLinks.map((item) => (
             <Link
