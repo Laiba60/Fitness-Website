@@ -39,15 +39,15 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
         <img
-        src={LogoQRM}
-       alt="QR Gym Logo"
-      className="
-      w-6
-      sm:w-10
-      md:w-12
-      lg:w-14
-      h-auto
-      mb-2
+          src={LogoQRM}
+          alt="QR Gym Logo"
+          className="
+          w-6
+          sm:w-10
+          md:w-12
+          lg:w-14
+           h-auto
+          mb-2
       object-contain
     rounded-md
   "
