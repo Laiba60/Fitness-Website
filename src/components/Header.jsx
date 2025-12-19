@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { CiStopwatch } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import LogoQRM from "../assets/images/LogoQRM.jpg";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -28,16 +29,23 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 backdrop-blur-sm
-        ${scrolled ? "bg-white text-black shadow-md" : "bg-linear-to-r from-[#4b0000] to-black text-white"}
+        ${
+          scrolled
+            ? "bg-white text-black shadow-md"
+            : "bg-linear-to-b from-[#4b0000] to-black text-white"
+        }
       `}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <img
-          src={LogoQRM}
-          alt="QR Gym Logo"
-          className="h-12 md:h-16 lg:h-20 object-contain rounded-md shrink-0"
-        />
-        <nav className="hidden md:flex space-x-8 font-semibold">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
+        <Link
+          to="/"
+          className={`text-2xl font-bold transition-colors duration-300 ${
+            scrolled ? "text-black" : "text-white"
+          }`}
+        >
+          QRM
+        </Link>
+        <nav className="hidden md:flex ml-auto space-x-8 font-semibold">
           {navLinks.map((item) => (
             <Link
               key={item}
@@ -49,7 +57,7 @@ const Header = () => {
           ))}
         </nav>
         <button
-          className="md:hidden p-2 focus:outline-none"
+          className="md:hidden ml-auto p-2 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className="block w-6 h-0.5 bg-current mb-1"></span>
@@ -69,7 +77,6 @@ const Header = () => {
               {item}
             </Link>
           ))}
-
           <div className="pt-4 border-t">
             <div className="flex items-center gap-3 text-sm">
               <CiStopwatch className="w-5 h-5" />
