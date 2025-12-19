@@ -44,7 +44,7 @@ const OurProfessionalTrainer = () => {
                          transition-all duration-500
                          hover:scale-105 hover:shadow-2xl"
             >
-              {/* Trainer Image */}
+              
               <div className="absolute -top-14 left-1/2 -translate-x-1/2">
                 <div
                   className="w-28 h-28 rounded-full border-4 border-black 
