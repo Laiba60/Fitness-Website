@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { FaHeadset, FaThumbsUp, FaDumbbell, FaAward } from "react-icons/fa";
 import FeedbackBg from "../assets/images/feedbackbg.avif";
 const stats = [
-  { id: 1, icon: <FaHeadset className="text-red-600 text-4xl sm:text-5xl" />, number: 80, label: "Expert Trainer" },
-  { id: 2, icon: <FaThumbsUp className="text-red-600 text-4xl sm:text-5xl" />, number: 120, label: "Client Feedback" },
-  { id: 3, icon: <FaDumbbell className="text-red-600 text-4xl sm:text-5xl" />, number: 100, label: "Total Branches" },
-  { id: 4, icon: <FaAward className="text-red-600 text-4xl sm:text-5xl" />, number: 70, label: "Award Winning" },
+  { id: 1, icon: <FaHeadset className="text-[#A58120] text-4xl sm:text-5xl" />, number: 80, label: "Expert Trainer" },
+  { id: 2, icon: <FaThumbsUp className="text-[#A58120] text-4xl sm:text-5xl" />, number: 120, label: "Client Feedback" },
+  { id: 3, icon: <FaDumbbell className="text-[#A58120] text-4xl sm:text-5xl" />, number: 100, label: "Total Branches" },
+  { id: 4, icon: <FaAward className="text-[#A58120] text-4xl sm:text-5xl" />, number: 70, label: "Award Winning" },
 ];
 const OverallFeedback = () => {
   const [counters, setCounters] = useState(stats.map(() => 0));
