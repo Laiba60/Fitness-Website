@@ -3,11 +3,11 @@ import mission from '../assets/images/mission.webp';
 
 const GymMission = () => {
   return (
-    <section className="bg-linear-to-b from-[#4b0000] to-black text-white py-16 px-4 md:px-8">
+    <section className="bg-linear-to-b from-[#A58120] to-black text-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col space-y-8">
           <div>
-            <p className="text-red-500 font-bold uppercase tracking-widest">MISSION</p>
+            <p className="text-white font-bold uppercase tracking-widest">MISSION</p>
             <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
               Unlock every member's full potential.
             </h2>
@@ -17,7 +17,7 @@ const GymMission = () => {
             </p>
           </div>
           <div>
-            <p className="text-red-500 font-bold uppercase tracking-widest">VISION</p>
+            <p className="text-white font-bold uppercase tracking-widest">VISION</p>
             <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
               Inspire fitness as a lifestyle.
             </h2>

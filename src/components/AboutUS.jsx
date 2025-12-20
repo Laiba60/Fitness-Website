@@ -34,7 +34,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="order-1 md:order-2 flex flex-col justify-center">
-            <span className="text-red-600 font-semibold uppercase tracking-wider mb-5 block">
+            <span className="text-gray-600 font-semibold uppercase tracking-wider mb-5 block">
               ABOUT QR GYM
             </span>
             <p className="text-gray-600 mb-10 leading-relaxed text-left">
@@ -47,9 +47,9 @@ const AboutUs = () => {
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 'Suspendisse tempus felis a libero mollis ultrices.'
               ].map((item, index) => (
-                <li key={index} className="flex items-start text-gray-600">
+                <li key={index} className="flex items-start text-gray-600 ">
                   <svg
-                    className="shrink-0 h-6 w-6 text-red-600 mr-3"
+                    className="shrink-0 h-6 w-6 mr-3 bg-linear-to-b from-[#A58120] to-black text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ const AboutUs = () => {
 
             <button
               onClick={handleClick}
-              className="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300"
+              className="bg-linear-to-b from-[#A58120] to-black text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300"
             >
               Learn More
             </button>

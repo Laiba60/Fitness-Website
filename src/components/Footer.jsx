@@ -5,7 +5,7 @@ import { RiFacebookFill, RiInstagramLine } from "react-icons/ri";
 import  LogoQRM from "../assets/images/LogoQRM.jpg";
 const Footer = () => {
   return (
-    <footer className="bg-linear-to-b from-[#4b0000] to-black text-white relative">
+    <footer className="bg-linear-to-b from-[#A58120] to-black text-white relative">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
           <img

@@ -59,13 +59,13 @@ const ContactInfoItem = () => {
   ];
 
   return (
-    <footer className="bg-linear-to-b from-[#4b0000] to-black text-white py-12 px-6 md:px-16">
+    <footer className="bg-linear-to-b from-[#A58120] to-black text-white py-12 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {items.map((item, index) => (
           <div
   key={index}
   className="border border-gray-700 p-6 rounded-lg 
-             bg-linear-to-b from-[#4b0000] to-black 
+            bg-linear-to-b from-[#A58120] to-black
              text-white 
              transition-all duration-300 
              hover:from-red-700 hover:to-black 

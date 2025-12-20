@@ -33,7 +33,7 @@ const Header = () => {
         ${
           scrolled
             ? "bg-white text-black shadow-md"
-            : "bg-linear-to-b from-[#4b0000] to-black text-white"
+            : "bg-black text-white"
         }
       `}
     >
@@ -48,7 +48,7 @@ const Header = () => {
           lg:w-14
            h-auto
           mb-2
-      object-contain
+          object-contain
     rounded-md
   "
 />

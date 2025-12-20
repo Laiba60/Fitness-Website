@@ -14,7 +14,7 @@ const GetLatestUpdateQRM = () => {
 
   return (
     <section className="py-12 bg-gray-100">
-      <div className="max-w-5xl mx-auto bg-linear-to-b from-red-900 to-black shadow-2xl rounded-3xl overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-linear-to-b from-[#A58120] to-black shadow-2xl rounded-3xl overflow-hidden">
         <div className="md:flex items-stretch">
           <div className="p-10 md:w-2/3 text-white">
             <div className="flex items-start gap-4 mb-6">
@@ -54,7 +54,7 @@ const GetLatestUpdateQRM = () => {
               />
               <button
                 type="submit"
-                className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl sm:rounded-l-none transition-transform transform hover:scale-105 shadow-md flex items-center justify-center"
+                className="bg-white text-black font-semibold py-3 px-6 rounded-xl sm:rounded-l-none transition-transform transform hover:scale-105 shadow-md flex items-center justify-center"
                 aria-label="Subscribe"
               >
                 <svg
