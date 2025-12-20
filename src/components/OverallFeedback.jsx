@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { FaHeadset, FaThumbsUp, FaDumbbell, FaAward } from "react-icons/fa";
 import FeedbackBg from "../assets/images/feedbackbg.avif";
 const stats = [
-  { id: 1, icon: <FaHeadset className="text-[#A58120] text-4xl sm:text-5xl" />, number: 80, label: "Expert Trainer" },
-  { id: 2, icon: <FaThumbsUp className="text-[#A58120] text-4xl sm:text-5xl" />, number: 120, label: "Client Feedback" },
-  { id: 3, icon: <FaDumbbell className="text-[#A58120] text-4xl sm:text-5xl" />, number: 100, label: "Total Branches" },
-  { id: 4, icon: <FaAward className="text-[#A58120] text-4xl sm:text-5xl" />, number: 70, label: "Award Winning" },
+  { id: 1, icon: <FaHeadset className="text-white text-4xl sm:text-5xl" />, number: 80, label: "Expert Trainer" },
+  { id: 2, icon: <FaThumbsUp className="text-white text-4xl sm:text-5xl" />, number: 120, label: "Client Feedback" },
+  { id: 3, icon: <FaDumbbell className="text-white text-4xl sm:text-5xl" />, number: 100, label: "Total Branches" },
+  { id: 4, icon: <FaAward className="text-white text-4xl sm:text-5xl" />, number: 70, label: "Award Winning" },
 ];
 const OverallFeedback = () => {
   const [counters, setCounters] = useState(stats.map(() => 0));
@@ -39,7 +39,7 @@ const OverallFeedback = () => {
           {stats.map((stat, index) => (
             <div
               key={stat.id}
-              className="flex flex-col items-center justify-center space-y-4 p-6 sm:p-8 border-2 border-dotted border-white rounded-xl sm:rounded-2xl bg-black/20 backdrop-blur-sm"
+              className="flex flex-col items-center justify-center space-y-4 p-6 sm:p-8 border-2 border-dotted border-white rounded-xl sm:rounded-2xl bg-linear-to-b from-[#A58120] to-black backdrop-blur-sm"
             >
               <div className="flex items-center justify-center p-4 rounded-full bg-white/10">
                 {stat.icon}

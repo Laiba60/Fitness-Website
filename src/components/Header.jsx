@@ -59,7 +59,7 @@ const Header = () => {
             <Link
               key={item}
               to={getLinkPath(item)}
-              className="hover:text-red-500 transition-colors duration-300"
+              className="hover:text-[#A58120] transition-colors duration-300"
             >
               {item}
             </Link>
@@ -80,7 +80,7 @@ const Header = () => {
             <Link
               key={item}
               to={getLinkPath(item)}
-              className="block font-semibold hover:text-red-500"
+              className="block font-semibold hover:text-[#A58120]"
               onClick={() => setMenuOpen(false)}
             >
               {item}
