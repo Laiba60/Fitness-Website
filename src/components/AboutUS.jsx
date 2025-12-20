@@ -34,7 +34,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="order-1 md:order-2 flex flex-col justify-center">
-            <span className="text-gray-600 font-semibold uppercase tracking-wider mb-5 block">
+            <span className="text-[#A58120] font-semibold uppercase tracking-wider mb-5 block">
               ABOUT QR GYM
             </span>
             <p className="text-gray-600 mb-10 leading-relaxed text-left">

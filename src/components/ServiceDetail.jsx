@@ -40,9 +40,9 @@ const ServiceDetail = () => {
     <section className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="text-red-600 font-semibold uppercase">Our Services</span>
-          <h2 className="mt-3 text-4xl font-extrabold text-gray-900">Transform Your Body & Mind</h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <span className="text-[#A58120] font-semibold uppercase">Our Services</span>
+          <h2 className="mt-3 text-4xl font-extrabold text-[#A58120]">Transform Your Body & Mind</h2>
+          <p className="mt-4 text-[#A58120] max-w-2xl mx-auto">
             Professional fitness services designed to help you stay strong, healthy, and confident.
           </p>
         </div>

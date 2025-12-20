@@ -14,12 +14,12 @@ const Serviceintro = () => {
           >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
-          <span className="text-sm font-semibold uppercase tracking-wide text-red-600">
+          <span className="text-sm font-semibold uppercase tracking-wide text-[#A58120]">
             OUR SERVICES
           </span>
-          <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+          <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold text-[#A58120] leading-tight">
             Solutions for moving{" "}
-            <span className="text-red-600">better & healthier</span>
+            <span className="text-[#A58120]">better & healthier</span>
           </h1>
           <p className="mt-6 text-gray-500 text-lg max-w-xl">
             Sed enim purus diam faucibus amet a dolor sed. Orci porttitor fames sed
@@ -29,7 +29,7 @@ const Serviceintro = () => {
           <div className="mt-8">
             <Link
               to="/services"
-              className="inline-flex items-center justify-center px-8 py-3 text-white bg-red-600 hover:bg-red-700 rounded-md text-base font-medium transition"
+              className="inline-flex items-center justify-center px-8 py-3 text-white bg-linear-to-b from-[#A58120] to-black hover:bg-red-700 rounded-md text-base font-medium transition"
             >
               Book Service
             </Link>

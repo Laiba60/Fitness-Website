@@ -28,10 +28,10 @@ const OurProfessionalTrainer = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <p className="text-red-500 font-semibold tracking-widest uppercase">
+        <p className="text-[#A58120] font-semibold tracking-widest uppercase">
           Best Trainer
         </p>
-        <h2 className="text-4xl font-bold mt-2 mb-16">
+        <h2 className="text-4xl font-bold mt-2 mb-16 text-[#A58120]">
           Our Professional Trainer
         </h2>
 
@@ -39,7 +39,7 @@ const OurProfessionalTrainer = () => {
           {trainers.map((trainer, index) => (
             <div
               key={index}
-              className="relative group bg-linear-to-b from-[#4b0000] to-black 
+              className="relative group bg-linear-to-b from-[#A58120] to-black 
                          rounded-3xl px-6 pt-16 pb-8 text-white shadow-lg
                          transition-all duration-500
                          hover:scale-105 hover:shadow-2xl">
@@ -57,7 +57,7 @@ const OurProfessionalTrainer = () => {
                   />
                 </div>
               </div>
-              <h3 className="mt-8 text-xl font-semibold text-red-500 transition-colors duration-300 group-hover:text-white">
+              <h3 className="mt-8 text-xl font-semibold text-[#A58120] transition-colors duration-300 group-hover:text-white">
                 {trainer.name}
               </h3>
               <p className="text-sm mb-4">{trainer.role}</p>
@@ -71,9 +71,9 @@ const OurProfessionalTrainer = () => {
                     <span
                       key={i}
                       className="w-9 h-9 flex items-center justify-center 
-                       rounded-full border border-red-500 text-red-500
+                       rounded-full border border-[#A58120] text-[#A58120]
                        transition-all duration-300
-                       hover:bg-red-500 hover:text-white
+                       hover:bg-[#A58120] hover:text-white
                       hover:scale-110 cursor-pointer"
                     >
                       <Icon size={14} />

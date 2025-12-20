@@ -16,7 +16,7 @@ const PersonalTrainerBooking = () => {
           <h1 className="text-3xl md:text-5xl font-bold">
             Are You Looking For a  Personal Trainer For Training?
           </h1>
-          <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300">
+          <button className="bg-linear-to-b from-[#A58120] to-black text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300">
             Book Appointment
           </button>
         </div>
