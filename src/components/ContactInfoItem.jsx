@@ -33,7 +33,7 @@ const ContactInfoItem = () => {
             href="https://www.facebook.com/profile.php?id=61583350382077&amp;sk"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-red-600 transform hover:scale-110 transition"
+            className=" transform hover:scale-110 transition"
           >
             <FaFacebookF />
           </a>
@@ -41,7 +41,7 @@ const ContactInfoItem = () => {
             href="https://www.instagram.com/qr_gym?igsh=MmdyNzlobGtlbWE&amp;utm_source=qr"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-red-600 transform hover:scale-110 transition"
+            className=" transform hover:scale-110 transition"
           >
             <FaInstagram />
           </a>
@@ -49,7 +49,7 @@ const ContactInfoItem = () => {
             href="https://www.tiktok.com/@qrgym0?_r=1&amp;_t=ZS-9197GaYMHQ7"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-red-600 transform hover:scale-110 transition"
+            className=" transform hover:scale-110 transition"
           >
             <FaTiktok />
           </a>
@@ -68,7 +68,8 @@ const ContactInfoItem = () => {
             bg-linear-to-b from-[#A58120] to-black
              text-white 
              transition-all duration-300 
-             hover:from-red-700 hover:to-black 
+            hover:from-[#A58120]
+             hover:to-black 
              hover:shadow-lg"
 >
             <h3 className="text-lg font-semibold mb-2">{item.title}</h3>

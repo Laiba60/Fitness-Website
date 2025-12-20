@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 items-stretch">
           <div className="order-2 md:order-1 relative h-full">
-            <div className="absolute inset-0 flex flex-col justify-center items-start text-red-600 opacity-70 no-pain-animation pointer-events-none">
+            <div className="absolute inset-0 flex flex-col justify-center items-start text-[#A58120] opacity-70 no-pain-animation pointer-events-none">
               {['NO PAIN NO GAIN', 'NO PAIN NO GAIN', 'NO PAIN NO GAIN', 'NO PAIN NO GAIN', 'NO PAIN NO GAIN']
                 .map((text, index) => (
                   <p

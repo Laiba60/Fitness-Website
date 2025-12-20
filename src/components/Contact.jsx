@@ -12,7 +12,7 @@ const ContactUs = () => {
       <div className="absolute inset-0 bg-black/80"></div>
       <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <span className="text-red-500 uppercase tracking-widest font-semibold">
+          <span className="text-[#A58120] uppercase tracking-widest font-semibold">
             Our Statics
           </span>
           <h1 className="mt-4 text-4xl lg:text-5xl font-extrabold leading-tight">
@@ -30,7 +30,7 @@ const ContactUs = () => {
                 <span>90%</span>
               </div>
               <div className="w-full h-2 bg-gray-700 rounded">
-                <div className="h-2 bg-red-600 rounded w-[90%]"></div>
+                <div className="h-2 bg-linear-to-b from-[#A58120] to-black rounded w-[90%]"></div>
               </div>
             </div>
             <div>
@@ -39,13 +39,13 @@ const ContactUs = () => {
                 <span>80%</span>
               </div>
               <div className="w-full h-2 bg-gray-700 rounded">
-                <div className="h-2 bg-red-600 rounded w-[80%]"></div>
+                <div className="h-2 bg-linear-to-b from-[#A58120] to-black rounded w-[80%]"></div>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-white/10 backdrop-blur-xl p-10 rounded-2xl shadow-xl">
-          <h2 className="text-2xl font-bold mb-6 text-center">
+          <h2 className="text-2xl font-bold mb-6 text-center text-[#A58120]">
             Contact Us
           </h2>
           <form className="space-y-4">
@@ -71,7 +71,7 @@ const ContactUs = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-red-600 hover:bg-red-700 py-3 rounded text-white font-bold transition"
+              className="w-full bg-linear-to-b from-[#A58120] to-black  py-3 rounded text-white font-bold transition"
             >
               SUBMIT NOW
             </button>
