@@ -43,10 +43,10 @@ const Footer = () => {
         <div className="text-center sm:text-left">
           <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
           <ul className="text-gray-300 text-sm space-y-1">
-            <li><Link to="/" className="hover:text-red-500 transition">Home</Link></li>
-            <li><Link to="/about" className="hover:text-red-500 transition">About Us</Link></li>
-            <li><Link to="/services" className="hover:text-red-500 transition">Our Services</Link></li>
-            <li><Link to="/contact" className="hover:text-red-500 transition">Contact Us</Link></li>
+            <li><Link to="/" className="hover:text-[#A58120] transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-[#A58120] transition">About Us</Link></li>
+            <li><Link to="/services" className="hover:text-[#A58120] transition">Our Services</Link></li>
+            <li><Link to="/contact" className="hover:text-red-[#A58120] transition">Contact Us</Link></li>
           </ul>
         </div>
         <div className="text-center sm:text-left">
@@ -74,7 +74,7 @@ const Footer = () => {
             © {new Date().getFullYear()} <span className="text-white font-semibold">QR Gym</span>. All Rights Reserved.
           </p>
           <a href="https://mediasolutionsqa.com/" className="mx-auto md:mx-0">
-           <div className="bg-red-600 p-2 rounded flex items-center justify-center">
+           <div className="bg-[#A58120] p-2 rounded flex items-center justify-center">
         <FaBullseye className="text-white h-6 w-6" />
        </div>
         </a>
