@@ -1,7 +1,7 @@
 import React from "react";
 import Bannerimage from "../assets/images/Bannerimage.avif";
 import AllBanner from "../assets/images/AllBanner.jpg";
-const AboutBanner = () => {
+const ServicesBanner = () => {
   return (
     <section
       className="relative h-[45vh] sm:h-[55vh] lg:h-[65vh] bg-cover bg-center"
@@ -24,4 +24,4 @@ const AboutBanner = () => {
   );
 };
 
-export default AboutBanner;
+export default ServicesBanner;
