@@ -64,13 +64,11 @@ const ContactInfoItem = () => {
         {items.map((item, index) => (
           <div
   key={index}
-  className="border border-gray-700 p-6 rounded-lg 
-            bg-linear-to-b from-[#A58120] to-black
-             text-white 
-             transition-all duration-300 
-            hover:from-[#A58120]
-             hover:to-black 
-             hover:shadow-lg"
+  className="border border-gray-700 p-6 rounded-lg
+    bg-linear-to-b from-[#A58120] to-black
+    text-white
+    transition-transform duration-300 ease-in-out
+    hover:scale-105 hover:-translate-y-1 hover:shadow-xl"
 >
             <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
             <p className="text-gray-300 leading-relaxed">{item.content}</p>
