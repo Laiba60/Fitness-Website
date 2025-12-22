@@ -63,13 +63,12 @@ const ContactInfoItem = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {items.map((item, index) => (
           <div
-  key={index}
-  className="border border-gray-700 p-6 rounded-lg
-    bg-linear-to-b from-[#A58120] to-black
-    text-white
-    transition-transform duration-300 ease-in-out
-    hover:scale-105 hover:-translate-y-1 hover:shadow-xl"
->
+        key={index}
+        className="border border-gray-700 p-6 rounded-lg
+        bg-linear-to-b from-[#A58120] to-black
+       text-white
+        transition-transform duration-300 ease-in-out
+        hover:scale-105 hover:-translate-y-1 hover:shadow-xl">
             <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
             <p className="text-gray-300 leading-relaxed">{item.content}</p>
           </div>
