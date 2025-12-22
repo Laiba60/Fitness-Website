@@ -40,7 +40,7 @@ const AboutUs = () => {
 
           {/* TEXT COLUMN */}
           <div className="order-1 md:order-2 flex flex-col justify-center">
-            <span className="text-[#A58120] font-semibold uppercase tracking-wider mb-5 block">
+            <span className="text-[#A58120] font-bold uppercase tracking-wider mb-5 block">
               ABOUT QR GYM
             </span>
 
