@@ -1,5 +1,5 @@
 import React from 'react';
-import mission from '../assets/images/mission.webp';
+import mission from '../assets/images/mission.png';
 
 const GymMission = () => {
   return (
